@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: Georgia, serif;
+    background-image: url("background-car-survey-photo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  
+  #title,
+  #description {
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  form {
+    width: 80vw;
+    max-width: 500px;
+    margin: 1em auto;
+    padding: .5em 0;
+    text-align: center;
+    background-color: #1b1b32;
+    color: white;
+  }
+  
+  fieldset {
+    border: none;
+  }
+  
+  label {
+    display: block;
+    padding: .4em 0;
+  }
+  
+  input {
+    width: 100%;
+  }
+  
+  .radio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  .inline1,
+  .inline2 {
+    width: 21%;
+  }
+  
+  .car-year {
+    width: 50%;
+  }
+  
+  .terms {
+    width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+  }
+  
+  .terms-padding {
+    margin-top: 1.5em;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    margin-bottom: 1em;
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: white;
+  }
+
+  .car-pictures {
+    padding: 1em;
+  }

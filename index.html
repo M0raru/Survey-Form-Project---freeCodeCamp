@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" >
+    <title>Car Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" type="text/css" >
+  </head>
+
+  <body>
+    <h1 id="title">Car Suvrey</h1>
+    <p id="description">Please fill all the inputs below!</p>
+
+    <form id="survey-form">
+
+      <fieldset>
+
+        <label id="name-label">Enter Your Full-Name: <input id="name" type="text" name="first-name" placeholder="Full-name" required /></label>
+
+        <label id="email-label">Enter Your Email Adress: <input id="email" type="email" name="email" required placeholder="@example.com" /></label>
+
+        <label id="number-label">Enter Your Phone Number: <input id="number" type="number" name="number" required placeholder="+40 77 7777 777" min="2" max="15"/></label>
+
+      </fieldset>
+      <hr>
+      <p>Sell your car Below</p>
+
+      <fieldset>
+        <label> What car are you selling?
+
+         <select id="dropdown">
+           <option value="">(select mark)</option>
+           <option value="1">BMW</option>
+           <option value="2">AUDI</option>
+           <option value="3">Mercedes</option>
+           <option value="4">Other</option>
+        </select></label>
+
+        <label class="year-label"> Year:
+          <input type="number" name="car-year" class="car-year" /></label>
+
+        </fieldset>
+        <hr>
+        <p>How is the car?</p>
+
+        <fieldset class="radio">
+           <label> New
+             <input type="radio" name="car-type" class="inline1" value="car-stat"/></label>
+
+        <label> Used
+          <input type="radio" name="car-type" class="inline2" value="car-stat" /></label>
+        </fieldset>
+
+        <hr>
+            <fieldset>Upload car pictures:
+                <label class="car-pictures" ><input type="file" name="file" /></label>
+            </fieldset>
+        <hr>
+        <p>Describe the car:</p>
+
+      <fieldset>
+
+        <label>
+          <textarea name="bio" rows="5" cols="35" placeholder="Engine Details / Other Informations"></textarea>
+        </label>
+
+      </fieldset>
+      <hr>
+      <fieldset class="terms-padding">
+        <label>
+          <input type="checkbox" name="terms" class="terms" value="terms" required />I accept to post my car
+        </label>
+
+        <label>
+          <input type="checkbox" name="terms" class="terms" value="terms" required />I assume my car is very safe to drive
+        </label>
+      </fieldset>
+
+      <input type="submit" value="Sell" id="submit" />
+
+    <form>
+
+
+  </body>
+</html>
